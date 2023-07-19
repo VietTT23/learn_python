@@ -1,16 +1,24 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import TComplex
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+cplx_1 = TComplex.t_complex()
+cplx_2 = TComplex.t_complex()
+tong = TComplex.t_complex()
+hieu = TComplex.t_complex()
+tich = TComplex.t_complex()
+thuong = TComplex.t_complex()
 
+cplx_1.nhap()
+cplx_1.xuat()
+cplx_2.nhap()
+cplx_2.xuat()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print('\n=====ket qua=====')
+print('phep +:')
+tong = cplx_1+cplx_2
+print('phep -:')
+hieu = cplx_1-cplx_2
+print('phep *:')
+tich = cplx_1*cplx_2
+print('phep /:')
+thuong = cplx_1/cplx_2
